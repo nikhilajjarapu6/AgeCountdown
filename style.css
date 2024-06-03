@@ -239,3 +239,25 @@ button{
         
     }
 }
+
+@media screen and (max-width:410px) {
+    .main {
+        width: 80vw; /* Full width */
+    }
+    .container .sidebar{
+
+        background-image: url(./Закат.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        /* background-position: 0%;         */
+    }
+}
+@media screen and (min-width:900px){
+    .container .sidebar{
+
+        background-image: url(./Закат.jpg);
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: 22%;        
+    }
+}

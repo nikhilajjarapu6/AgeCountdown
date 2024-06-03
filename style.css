@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Play:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9A3B3B;
+    color: #e8eaed;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw; /* Full width */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.container {
+    width: 920px;
+    height: 500px;
+    background-color: #f09968;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.container .sidebar{
+    width: 40%;
+    background-color: #5F6F52;
+    height: 100%;
+    border-radius: 20px 90px 90px 20px;
+    background-image: url(./Закат.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+   
+    
+}
+.sidebar .date{
+    width:300px;
+    height: 160px;
+    background-color: #9a3b3b65;
+    margin-top: 70px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0px;
+    flex-direction: column;
+}
+.div2{
+    display: flex;
+    align-items:center;
+    /* background-color: #9a3b3b69; */
+    margin:0%;
+    width:100%;
+    height:110px;
+    justify-content: space-evenly;
+    /* backdrop-filter: blur(5px); */
+}
+.div1{
+    width:300px;
+    /* background-color: #9A3B3B; */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:-5px 20px 0px 20px;
+    
+}
+.div1::after{
+    content: "";
+    position: absolute;
+    /* bottom: 1px; */
+    top: 154px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    animation: expandWidth 1s ease forwards; 
+}
+.div2 h1{
+    font-size: 90px;
+    position: relative;
+    left: 25px;
+    animation: normal textSilde 1s ease;
+}
+
+.div2 h2{
+    margin-top: 50px;
+    animation: textSilde 1s ease;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58%;
+    height: 420px;
+    margin: 0px;
+    justify-content:center;
+    margin: 20px 0px 20px 0px;
+    /* background-color: white; */
+}
+
+.div4{
+    width: 100%;
+    height: 75%;
+    /* background-color: #9a3b3b65; */
+    border-radius: 10px;
+}
+.div4 h2{
+    margin-left: 7px;
+    margin-bottom: -5px;
+    background-color: #5F6F52;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form{
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    padding: 5px;
+    
+}
+
+
+
+input[type="date"] {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button{
+    margin: 7px 0px 0px 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #5F6F52;
+    /* margin-left: 5px; */
+    color: white;
+}
+.ageCountdown{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 0px 30px; */
+    /* background-color: aqua; */
+}
+.ageCountdown div{
+    background-color: rgba(66, 66, 66, 0.329);
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 3px;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+.ageCountdown div .number{
+    color: white;
+    font-size: 60px;
+    animation: normal slide 1s ease;
+}
+.ageCountdown div .text{
+    color: #113946;
+    position: relative;
+    top: 10px;
+    animation: normal slide 1.2s ease;
+}
+
+
+
+/* #one.wow {
+    transform: scale(2);
+    animation: normal slide 3s ease;
+    transition: all 6s ease;
+} */
+.ageCountdown div .text.active{
+    animation: normal slide 1s ease;
+}
+
+@keyframes textSilde{
+    0% {
+        transform: translateY(15px);
+        filter: blur(1.5px);
+        color: #df7474;
+    }
+    50% {
+        transform: translateY(-12px);
+        filter: blur(1.5px);
+    }
+    100% {
+        transform: translateY(0px);
+        filter: blur(0px);
+    }
+}
+@keyframes expandWidth {
+    0% {
+        width: 0;
+        left: 50%;
+        background-color:  #df7474;
+        
+    }
+    100% {
+        width: 100%;
+        left: 0;
+        
+    }
+}
+
+@keyframes slide{
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+        
+    }
+}

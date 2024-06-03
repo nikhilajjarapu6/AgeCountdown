@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="sidebar">
+                    <div class="date">
+                        <div class="div1">
+                            <p id="month"></p>
+                             <p id="year"></p>
+                        </div>
+                        <div class="div2">
+                        <h1 id="date"></h1>
+                        <h2 id="week"></h2>
+                        </div>
+                    </div>
+            </div>
+            <div class="content">
+
+                <div class="div4">
+                    <h2>Age Calculation</h2>
+                    <div class="form">
+                        <form action="#">
+                            <label for="dateInput">Calculate age for given date</label>
+                            <input type="date" id="dateInput" name="dateInput" value="2024-06-01">
+                            <button id="btn">Calculate</button>
+                            <div class="ageCountdown">
+                                <div>
+                                    <p class="number">01</p>
+                                    <p class="text">Years</p>
+                                </div>
+                                <div>
+                                    <p class="number">01</p>
+                                    <p class="text">Months</p>
+                                </div>
+                                <div>
+                                    <p class="number" id="one">01</p>
+                                    <p class="text">Days</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
